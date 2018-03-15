@@ -1,0 +1,400 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Trs_Book.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Trs_Book.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 240, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Trs通讯录"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Trs_Book 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017\r\n\r\n制作人所有 谭瑞\r\n\r\n专业 软件工程\r\n\r\n制作软件 VC6.0",
+                    IDC_STATIC,40,25,109,63
+    DEFPUSHBUTTON   "确定",IDOK,182,7,50,14,WS_GROUP
+END
+
+IDD_TRS_BOOK_DIALOG DIALOGEX 0, 0, 533, 349
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "通讯录"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,476,328,50,14
+    CONTROL         "List2",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    7,7,197,236,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "新建联系人",IDC_BUTTON1,7,245,52,21
+    PUSHBUTTON      "修改联系人",IDC_BUTTON2,7,280,54,21
+    PUSHBUTTON      "删除联系人",IDC_BUTTON4,7,321,55,21,BS_CENTER | 
+                    BS_VCENTER
+    GROUPBOX        "备注",IDC_STATIC,199,7,327,137
+    EDITTEXT        IDC_EDIT2,207,20,319,118,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "查找联系人",IDC_STATIC,221,152,303,164
+    LTEXT           "姓名",IDC_STATIC,225,171,23,21,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,295,171,87,21,ES_AUTOHSCROLL
+    LTEXT           "联系电话",IDC_STATIC,223,219,39,25,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT3,293,219,150,24,ES_AUTOHSCROLL
+    LTEXT           "分组",IDC_STATIC,223,269,27,23,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "查找",IDC_BUTTON3,477,277,44,20
+    PUSHBUTTON      "显示全部",IDC_BUTTON5,472,168,50,22
+    COMBOBOX        IDC_COMBO1,293,271,58,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_DIADD DIALOG DISCARDABLE  0, 0, 342, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,222,50,14
+    PUSHBUTTON      "取消",IDCANCEL,285,222,50,14
+    GROUPBOX        "输入联系人",IDC_STATIC,18,14,294,178
+    LTEXT           "姓名",IDC_STATIC,19,32,25,20,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "电话号码",IDC_STATIC,19,67,35,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "邮箱",IDC_STATIC,19,101,27,23,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,69,32,43,19,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,69,68,90,19,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,68,102,95,21,ES_AUTOHSCROLL
+    LTEXT           "分组",IDC_STATIC,19,148,21,19,SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,70,150,37,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "备注",IDC_STATIC,196,33,114,131
+    EDITTEXT        IDC_EDIT4,200,42,107,118,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIEDIT DIALOG DISCARDABLE  0, 0, 330, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,217,50,14
+    PUSHBUTTON      "取消",IDCANCEL,273,217,50,14
+    GROUPBOX        "联系人信息",IDC_STATIC,7,7,306,166
+    LTEXT           "姓名",IDC_STATIC,14,25,21,19,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "电话号码",IDC_STATIC,14,58,35,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "邮箱",IDC_STATIC,14,92,42,19,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,66,25,54,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,66,58,81,20,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,67,91,76,19,ES_AUTOHSCROLL
+    LTEXT           "分组",IDC_STATIC,14,130,20,19,SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,64,130,39,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "备注",IDC_STATIC,194,17,116,142
+    EDITTEXT        IDC_EDIT4,196,26,113,131,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DILineView DIALOG DISCARDABLE  0, 0, 327, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联系人信息"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "联系人信息",IDC_STATIC,7,7,160,182
+    LTEXT           "姓名",IDC_STATIC,14,27,19,22,SS_CENTERIMAGE
+    LTEXT           "联系人电话",IDC_STATIC,13,73,44,20,SS_CENTERIMAGE
+    LTEXT           "邮箱",IDC_STATIC,13,121,21,21,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,72,34,66,19,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT2,72,79,90,21,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT3,72,126,91,21,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "退出",IDC_BUTTON1,281,170,39,19
+    GROUPBOX        "备注",IDC_STATIC,185,13,115,135
+    EDITTEXT        IDC_EDIT4,187,24,112,123,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL
+    LTEXT           "分组",IDC_STATIC,13,161,22,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT5,73,164,66,16,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_DISAVE DIALOG DISCARDABLE  0, 0, 182, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,33,29,14
+    PUSHBUTTON      "取消",IDCANCEL,146,33,29,14
+    LTEXT           "是否保存修改",IDC_STATIC,65,7,52,26,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Trs_Book Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Trs_Book\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Trs_Book.EXE\0"
+            VALUE "ProductName", "Trs_Book 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_TRS_BOOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 342
+    END
+
+    IDD_DIADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_DIEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_DILineView, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DISAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIEDIT DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xaccd, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd2bc, 0xcbc8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf3c5, 0xd1d3, "\000" 
+    0
+END
+
+IDD_DIADD DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xaccd, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd2bc, 0xcbc8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf3c5, 0xd1d3, "\000" 
+    0
+END
+
+IDD_TRS_BOOK_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xaccd, 0xa7d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd2bc, 0xcbc8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf3c5, 0xd1d3, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "版本信息",                    ID_BANBEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Trs_Book(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Trs_Book.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
